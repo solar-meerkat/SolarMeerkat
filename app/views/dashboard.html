@@ -1,0 +1,17 @@
+<div id="dashboard" ng-controller="DashboardCtrl">
+    <nav-bar></nav-bar>
+    <div class="statistic">
+        <div class="block1"></div>
+        <div class="block2"></div>
+    </div>
+    <div class="statistic_boxes"></div>
+    <div class="statistic_footer"></div>
+    <script>
+        $(document).ready(function(){
+            $(".slide_click").click(function(){
+                $(".slide_box").slideToggle("slow");
+            });
+        });
+    </script>
+    <footer></footer>
+</div>

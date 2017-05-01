@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SolarMeerkat" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SolarMeerkat</title>
+  <meta name="description" content="SolarMeerkat - project for calculates solar data">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logotype.ico">
+  <base href="/">
+  <link rel="stylesheet" href="bower_components/noty/lib/noty.js">
+  <link rel="stylesheet" href="components/stylesheets/app.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <!-- <script src="components/features/facebook_auth.js"></script> -->
+</head>
+<body>
+<div ng-view></div>
+<script src="bower_components/noty/lib/noty.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="components/controllers/start.js"></script>
+<script src="components/controllers/dashboard.js"></script>
+<script src="components/controllers/planing-reports.js"></script>
+<script src="components/controllers/locations.js"></script>
+<script src="components/directives/nav.js"></script>
+<script src="components/version/version.js"></script>
+</body>
+</html>

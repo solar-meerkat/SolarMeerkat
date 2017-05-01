@@ -1,0 +1,41 @@
+<div id="planing_reports" ng-controller="PlaningReportsCtrl">
+    <div class="planing_reports_form">
+        <form class="add_device_form">
+            <label>
+                <span>Device name: </span>
+                <hr>
+                <input type="text" ng-model="deviceName">
+            </label>
+            <label>
+                <span>Device avatar: </span>
+                <hr>
+                <input type="url" ng-model="deviceImg">
+            </label>
+            <label>
+                <span>Device params: </span>
+                <hr>
+                <div class="device_push_params">
+                    <input type="text" ng-model="deviceParam">
+                    <input type="text" ng-model="deviceParam2">
+                </div>
+            </label>
+            <label>
+                <button type="submit" ng-click="addDevice()">Add device</button>
+            </label>
+        </form>
+    </div>
+    <div class="devices_list">
+        <ul class="devices_list">
+            <li class="device" ng-repeat="device in devices track by $index">
+                <p class="done-{{ device.done }}">{{device.name}}</p>
+                <ul class="device_params" ng-repeat="device_p in device.device_params">
+                    <li>{{device_p.param}}</li>
+                </ul>
+                <img src="{{device.img}}">
+            </li>
+        </ul>
+        <div class="calc_devices_energy">
+            <button ng-click="calcTravelDevicesSolved()">Calc my travel energy!</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,424 @@
+/* SolarMeerkat */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+/* line 39, ../sass/reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 11, ../sass/directives/nav.sass */
+.data_time {
+  position: relative;
+  width: 100%;
+  min-height: 62px;
+  background-color: #0a877a;
+  text-align: right;
+  margin: 4px;
+}
+/* line 19, ../sass/directives/nav.sass */
+.data_time .dateNow {
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 18px;
+  margin-right: 24px;
+  font-weight: bolder;
+  float: right;
+  position: relative;
+  color: white;
+  top: 10px;
+  -webkit-box-shadow: 10px;
+  -moz-box-shadow: 10px;
+  box-shadow: 10px;
+}
+/* line 30, ../sass/directives/nav.sass */
+.data_time .menu_control {
+  top: 6px;
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  left: 20px;
+  background: whitesmoke;
+  border: none;
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 16px;
+  -webkit-box-shadow: 10px;
+  -moz-box-shadow: 10px;
+  box-shadow: 10px;
+  cursor: pointer;
+}
+/* line 44, ../sass/directives/nav.sass */
+.data_time .menu_control:hover {
+  background: gray;
+}
+
+/* line 47, ../sass/directives/nav.sass */
+#app_nav {
+  position: relative;
+  display: flex;
+  height: auto;
+  width: 38%;
+  flex-direction: column;
+}
+/* line 54, ../sass/directives/nav.sass */
+#app_nav .menu_nav {
+  position: relative;
+  height: auto;
+  padding: 2.1%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/* line 62, ../sass/directives/nav.sass */
+#app_nav .menu_nav .hidden {
+  display: block;
+}
+/* line 65, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header {
+  position: relative;
+  height: 294px;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #ec6a43;
+}
+/* line 72, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left {
+  position: relative;
+  float: left;
+}
+/* line 76, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left img {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  top: 38px;
+  left: 28px;
+  width: 140px;
+  height: 140px;
+  border: 4px solid lightgray;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-box-shadow: 50%;
+  -moz-box-shadow: 50%;
+  box-shadow: 50%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+}
+/* line 92, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left img:hover {
+  transform: rotateZ(1.4deg);
+  opacity: 0.8;
+}
+/* line 96, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left .user_name {
+  position: relative;
+  top: 200px;
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 23px;
+  color: white;
+  float: left;
+  left: -100px;
+}
+/* line 105, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .brand_nav_text {
+  position: relative;
+  top: 0px;
+  font-size: 20px;
+  color: lightcoral;
+  cursor: pointer;
+  font-style: oblique;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 114, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .two_ul {
+  margin-top: 20px;
+}
+/* line 117, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul {
+  text-align: left;
+  position: relative;
+  float: left;
+  margin-top: -10px;
+  width: 100%;
+  top: 210px;
+}
+/* line 125, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul li {
+  position: relative;
+  margin: 14px;
+  background-color: whitesmoke;
+  padding: 4%;
+}
+/* line 131, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 137, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .right {
+  position: relative;
+  float: right;
+}
+/* line 141, ../sass/directives/nav.sass */
+#app_nav .menu_nav .header .right .user_ico {
+  position: relative;
+  text-align: right;
+}
+
+@font-face {
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-family: OpenSansBold;
+}
+@font-face {
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: OpenSansRegular;
+}
+/* line 23, ../sass/app.sass */
+body, html {
+  position: relative;
+  padding: 0 auto;
+}
+/* line 27, ../sass/app.sass */
+body #start, html #start {
+  position: relative;
+  padding: 0.8%;
+  background-size: 100%;
+  background: url(../images/cosmic1.jpg) no-repeat #fefefe;
+}
+/* line 33, ../sass/app.sass */
+body #start .nav, html #start .nav {
+  position: relative;
+  height: auto;
+  background-color: #109488;
+  width: 98%;
+  padding: 0.4%;
+  -webkit-box-shadow: 1px 2px 2px lightgray;
+  -moz-box-shadow: 1px 2px 2px lightgray;
+  box-shadow: 1px 2px 2px lightgray;
+}
+/* line 41, ../sass/app.sass */
+body #start .nav .logo, html #start .nav .logo {
+  position: relative;
+  background: url(../images/logotype.png) no-repeat top;
+  background-size: 60%;
+  width: 280px;
+  height: 108px;
+  top: 20px;
+}
+/* line 49, ../sass/app.sass */
+body #start .login_form, html #start .login_form {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 57, ../sass/app.sass */
+body #start .login_form .body, html #start .login_form .body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #109488;
+}
+/* line 64, ../sass/app.sass */
+body #start .login_form .body label, html #start .login_form .body label {
+  position: relative;
+  padding: 2%;
+  margin: 2px;
+  display: block;
+}
+/* line 70, ../sass/app.sass */
+body #start .login_form .body label input, html #start .login_form .body label input {
+  position: relative;
+  text-align: center;
+  min-height: 38px;
+  width: 180px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border: none;
+  background: lightgray;
+  font-size: 16px;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 83, ../sass/app.sass */
+body #start .login_form .body label input:hover, html #start .login_form .body label input:hover {
+  background-color: whitesmoke;
+}
+/* line 86, ../sass/app.sass */
+body #start .login_form .footer, html #start .login_form .footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #109488;
+}
+/* line 93, ../sass/app.sass */
+body #start .login_form .footer label, html #start .login_form .footer label {
+  position: relative;
+  padding: 2%;
+  display: block;
+}
+/* line 98, ../sass/app.sass */
+body #start .login_form .footer label button, html #start .login_form .footer label button {
+  position: relative;
+  min-height: 32px;
+  text-align: center;
+  color: white;
+  padding: 1.6%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-transform: uppercase;
+  background: lightcoral;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 114, ../sass/app.sass */
+body #start .login_form .footer label button:hover, html #start .login_form .footer label button:hover {
+  background-color: lightgray;
+}
+/* line 117, ../sass/app.sass */
+body #start footer, html #start footer {
+  position: relative;
+  text-align: center;
+  min-height: 68px;
+  width: 100%;
+  padding: 0.4%;
+  top: 160px;
+  background-color: #252422;
+  margin-bottom: 4px;
+}
+/* line 127, ../sass/app.sass */
+body #start footer p, html #start footer p {
+  color: white;
+  font-size: 14px;
+  font-stretch: inherit;
+  font-family: OpenSansRegular, Arial, monospace;
+}
+/* line 133, ../sass/app.sass */
+body #dashboard, html #dashboard {
+  position: relative;
+  padding: 0.2%;
+  width: 95%;
+  height: auto;
+  background-size: 100%;
+}
+/* line 140, ../sass/app.sass */
+body #dashboard footer, html #dashboard footer {
+  position: relative;
+  padding: 2.8%;
+  background: #ec6a43;
+  top: 450px;
+  left: 6px;
+}
+/* line 147, ../sass/app.sass */
+body #dashboard .statistic, html #dashboard .statistic {
+  position: relative;
+  background-size: 80%;
+  height: 500px;
+  width: 96%;
+  left: -60px;
+  margin-top: -260px;
+  background: url(../images/earth.gif) no-repeat right;
+}
+/* line 156, ../sass/app.sass */
+body #planing_reports, html #planing_reports {
+  position: relative;
+  width: 95%;
+  height: auto;
+  text-align: center;
+  padding: 0.4%;
+}
+/* line 163, ../sass/app.sass */
+body #planing_reports .planing_reports_form, html #planing_reports .planing_reports_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+/* line 169, ../sass/app.sass */
+body #planing_reports .planing_reports_form label, html #planing_reports .planing_reports_form label {
+  position: relative;
+  display: block;
+}
+/* line 173, ../sass/app.sass */
+body #planing_reports .planing_reports_form label span, html #planing_reports .planing_reports_form label span {
+  color: lightgray;
+  font-weight: bolder;
+}
+/* line 177, ../sass/app.sass */
+body #planing_reports .planing_reports_form label input, html #planing_reports .planing_reports_form label input {
+  min-height: 38px;
+  -webkit-box-shadow: 20px;
+  -moz-box-shadow: 20px;
+  box-shadow: 20px;
+  border: none;
+  background: whitesmoke;
+}
+/* line 183, ../sass/app.sass */
+body #planing_reports .planing_reports_form label button, html #planing_reports .planing_reports_form label button {
+  min-height: 40px;
+  top: 8px;
+  border: none;
+  background-color: lightcoral;
+  color: white;
+}

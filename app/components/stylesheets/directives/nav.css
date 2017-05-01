@@ -1,0 +1,160 @@
+/* line 11, ../../sass/directives/nav.sass */
+.data_time {
+  position: relative;
+  width: 100%;
+  min-height: 62px;
+  background-color: #0a877a;
+  text-align: right;
+  margin: 4px;
+}
+/* line 19, ../../sass/directives/nav.sass */
+.data_time .dateNow {
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 18px;
+  margin-right: 24px;
+  font-weight: bolder;
+  float: right;
+  position: relative;
+  color: white;
+  top: 10px;
+  -webkit-box-shadow: 10px;
+  -moz-box-shadow: 10px;
+  box-shadow: 10px;
+}
+/* line 30, ../../sass/directives/nav.sass */
+.data_time .menu_control {
+  top: 6px;
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  left: 20px;
+  background: whitesmoke;
+  border: none;
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 16px;
+  -webkit-box-shadow: 10px;
+  -moz-box-shadow: 10px;
+  box-shadow: 10px;
+  cursor: pointer;
+}
+/* line 44, ../../sass/directives/nav.sass */
+.data_time .menu_control:hover {
+  background: gray;
+}
+
+/* line 47, ../../sass/directives/nav.sass */
+#app_nav {
+  position: relative;
+  display: flex;
+  height: auto;
+  width: 38%;
+  flex-direction: column;
+}
+/* line 54, ../../sass/directives/nav.sass */
+#app_nav .menu_nav {
+  position: relative;
+  height: auto;
+  padding: 2.1%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/* line 62, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .hidden {
+  display: block;
+}
+/* line 65, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header {
+  position: relative;
+  height: 294px;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #ec6a43;
+}
+/* line 72, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left {
+  position: relative;
+  float: left;
+}
+/* line 76, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left img {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  top: 38px;
+  left: 28px;
+  width: 140px;
+  height: 140px;
+  border: 4px solid lightgray;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-box-shadow: 50%;
+  -moz-box-shadow: 50%;
+  box-shadow: 50%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+}
+/* line 92, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left img:hover {
+  transform: rotateZ(1.4deg);
+  opacity: 0.8;
+}
+/* line 96, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .left .user_name {
+  position: relative;
+  top: 200px;
+  font-family: OpenSansBold, Arial, monospace;
+  font-size: 23px;
+  color: white;
+  float: left;
+  left: -100px;
+}
+/* line 105, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .brand_nav_text {
+  position: relative;
+  top: 0px;
+  font-size: 20px;
+  color: lightcoral;
+  cursor: pointer;
+  font-style: oblique;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 114, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .two_ul {
+  margin-top: 20px;
+}
+/* line 117, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul {
+  text-align: left;
+  position: relative;
+  float: left;
+  margin-top: -10px;
+  width: 100%;
+  top: 210px;
+}
+/* line 125, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul li {
+  position: relative;
+  margin: 14px;
+  background-color: whitesmoke;
+  padding: 4%;
+}
+/* line 131, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: OpenSansBold, Arial, monospace;
+}
+/* line 137, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .right {
+  position: relative;
+  float: right;
+}
+/* line 141, ../../sass/directives/nav.sass */
+#app_nav .menu_nav .header .right .user_ico {
+  position: relative;
+  text-align: right;
+}

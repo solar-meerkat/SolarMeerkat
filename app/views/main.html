@@ -1,0 +1,29 @@
+<div id="start" ng-controller="StartCtrl">
+    <nav class="nav" title="SolarMeerkat">
+        <div class="logo"></div>
+    </nav>
+    <form name="login_form" class="login_form">
+        <div class="body">
+            <label>
+                <input type="text" name="name" required ng-model="User.user_name">
+            </label>
+            <label>
+                <input type="email" value="example@test.com" name="email" required ng-model="User.user_email">
+            </label>
+            <label>
+                <input type="password" name="pass" required ng-model="User.user_password">
+            </label>
+            <blockquote ng-show="login_form.user_name.$touched && login_form.user_email.$touched">
+                Name and email is correct
+            </blockquote>
+        </div>
+        <div class="footer">
+            <label>
+                <button ng-click="checkUserData()" type="submit">Submit</button>
+            </label>
+        </div>
+    </form>
+    <footer>
+        <p>Provided by <a>SolarMeerkat</a>, 2017</p>
+    </footer>
+</div>

@@ -1,0 +1,188 @@
+/* SolarMeerkat */
+@import 'reset'
+@import 'directives/nav'
+
+@font-face
+  src: url(../fonts/OpenSans-Bold.ttf)
+  font-family: OpenSansBold
+
+@font-face
+  src: url(../fonts/OpenSans-Regular.ttf)
+  font-family: OpenSansRegular
+
+@mixin box-shadow ($box-shadow)
+  -webkit-box-shadow: $box-shadow
+  -moz-box-shadow: $box-shadow
+  box-shadow: $box-shadow
+
+@mixin border-radius ($border-radius)
+  -webkit-box-shadow: $border-radius
+  -moz-box-shadow: $border-radius
+  box-shadow: $border-radius
+
+body, html
+  position: relative
+  padding: 0 auto
+
+  #start
+    position: relative
+    padding: 0.8%
+    background-size: 100%
+    background: url(../images/cosmic1.jpg) no-repeat #fefefe
+
+    .nav
+      position: relative
+      height: auto
+      background-color: #109488
+      width: 98%
+      padding: 0.4%
+      @include box-shadow(1px 2px 2px lightgray)
+
+      .logo
+        position: relative
+        background: url(../images/logotype.png) no-repeat top
+        background-size: 60%
+        width: 280px
+        height: 108px
+        top: 20px
+
+    .login_form
+      position: relative
+      width: 60%
+      margin: auto
+      padding: 2%
+      display: flex
+      flex-direction: column
+
+      .body
+        position: relative
+        width: 100%
+        height: auto
+        display: block
+        border-bottom: 2px solid #109488
+
+        label
+          position: relative
+          padding: 2%
+          margin: 2px
+          display: block
+
+          input
+            position: relative
+            text-align: center
+            min-height: 38px
+            width: 180px
+            border-radius: 8px
+            -webkit-border-radius: 8px
+            -moz-border-radius: 8px
+            border: none
+            background: lightgray
+            font-size: 16px
+            font-family: OpenSansBold, Arial, monospace
+
+          input:hover
+            background-color: whitesmoke
+
+      .footer
+        position: relative
+        width: 100%
+        height: auto
+        display: block
+        border-bottom: 2px solid #109488
+
+        label
+          position: relative
+          padding: 2%
+          display: block
+
+          button
+            position: relative
+            min-height: 32px
+            text-align: center
+            color: white
+            padding: 1.6%
+            border-radius: 8px
+            -webkit-border-radius: 8px
+            -moz-border-radius: 8px
+            text-transform: uppercase
+            background: lightcoral
+            border: none
+            font-size: 16px
+            cursor: pointer
+            font-family: OpenSansBold, Arial, monospace
+
+          button:hover
+            background-color: lightgray
+
+    footer
+      position: relative
+      text-align: center
+      min-height: 68px
+      width: 100%
+      padding: 0.4%
+      top: 160px
+      background-color: #252422
+      margin-bottom: 4px
+
+      p
+        color: white
+        font-size: 14px
+        font-stretch: inherit
+        font-family: OpenSansRegular, Arial, monospace
+
+  #dashboard
+    position: relative
+    padding: 0.2%
+    width: 95%
+    height: auto
+    background-size: 100%
+
+    footer
+      position: relative
+      padding: 2.8%
+      background: #ec6a43
+      top: 450px
+      left: 6px
+
+    .statistic
+      position: relative
+      background-size: 80%
+      height: 500px
+      width: 96%
+      left: -60px
+      margin-top: -260px
+      background: url(../images/earth.gif) no-repeat right
+
+  #planing_reports
+    position: relative
+    width: 95%
+    height: auto
+    text-align: center
+    padding: 0.4%
+
+    .planing_reports_form
+      position: relative
+      display: flex
+      flex-direction: column
+      margin: 0
+
+      label
+        position: relative
+        display: block
+
+        span
+          color: lightgray
+          font-weight: bolder
+
+        input
+          min-height: 38px
+          @include border-radius(20px)
+          border: none
+          background: whitesmoke
+
+        button
+          min-height: 40px
+          top: 8px
+          border: none
+          background-color: lightcoral
+          color: white
